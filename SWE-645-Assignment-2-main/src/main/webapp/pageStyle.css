@@ -1,0 +1,113 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    background-image: url("background_form.jpeg");
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 30px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #00b36e;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Style checkboxes and radio buttons */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Style the likelihood of recommending dropdown */
+select {
+    appearance: none; /* Remove default arrow on some browsers */
+    -webkit-appearance: none;  /*Remove default arrow on WebKit browsers */
+    -moz-appearance: none; /*Remove default arrow on Firefox*/
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background: black;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* Style the Raffle text box */
+input[type="text"][name="raffle"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.rad{
+    padding-top: 15px;
+}

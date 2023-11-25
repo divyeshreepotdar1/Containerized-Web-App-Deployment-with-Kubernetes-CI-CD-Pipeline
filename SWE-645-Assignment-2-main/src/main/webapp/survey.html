@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" type="text/css" href="pageStyle.css">
+</head>
+<body>
+    <h1>Student Survey Form</h1>
+    <form method="post">
+        <label for="firstName">Name *</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name" required>
+
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required>
+
+        <label for="streetAddress">Street Address *</label>
+        <input type="text" id="streetAddress" name="streetAddress" placeholder="Enter your Street Address" required>
+
+        <label for="city">City *</label>
+        <input type="text" id="city" name="city" placeholder="Enter your City" required>
+
+        <label for="state">State *</label>
+        <input type="text" id="state" name="state" placeholder="Enter your State"required>
+
+        <label for="zip">Zip *</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your Zip code" required>
+
+        <label for="phoneNumber">Telephone Number *</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone number" required>
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+
+        <label for="dateOfSurvey">Date of Survey *</label>
+        <input type="date" id="dateOfSurvey" name="dateOfSurvey" required>
+
+        <label class="rad">What did you like most about the campus?</label>
+        <input type="checkbox" id="likeStudents" name="likes[]" value="students" checked>
+        <label for="likeStudents">Students</label>
+        <input type="checkbox" id="likeLocation" name="likes[]" value="location">
+        <label for="likeStudents">Location</label>
+        <input type="checkbox" id="likeCampus" name="likes[]" value="campus">
+        <label for="likeStudents">Campus</label>
+        <input type="checkbox" id="likeAtmosphere" name="likes[]" value="atmosphere">
+        <label for="likeStudents">Atmosphere</label>
+        <input type="checkbox" id="likeDormrooms" name="likes[]" value="dormrooms">
+        <label for="likeStudents">Dorm rooms</label>
+        <input type="checkbox" id="likeSports" name="likes[]" value="sports">
+        <label for="likeStudents">Sports</label>
+
+
+        <label class="rad">How did you become interested in the university?</label>
+        <input type="radio" id="interestFriends" name="interest" value="friends" checked>
+        <label for="interestFriends">Friends</label>
+        <input type="radio" id="interestTelevision" name="interest" value="television">
+        <label for="interestTelevision">Television</label>
+        <input type="radio" id="interestInternet" name="interest" value="internet">
+        <label for="interestInternet">Internet</label>
+        <input type="radio" id="interestOther" name="interest" value="other">
+        <label for="interestOther">Other</label>
+
+        <label for="recommendation" class="rad">Likelihood of Recommending *</label>
+        <select id="recommendation" name="recommendation" required>
+            <option value="Very Likely" selected>Very Likely</option>
+            <option value="Likely">Likely</option>
+            <option value="Unlikely">Unlikely</option>
+        </select>
+
+        <label for="raffle">Raffle (Enter at least ten comma-separated numbers from 1 through 100) *</label>
+        <input type="text" id="raffle" name="raffle" pattern="(?:[1-9][0-9]?|100)(?:,(?:[1-9][0-9]?|100)){9}" placeholder="eg. 1,34,2,56,75,22,25,42,88,99" required>
+
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter Additional comments"></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </div>
+    </form>
+</body>
+</html>
